@@ -46,11 +46,9 @@ class WeatherMCP:
 
 # ---- Instantiate MCP ----
 
-fastmcp = FastMCP()
 # Use your own API key here
 weather_agent = WeatherAgent(api_key="bcc39de31b1d0ae7af44fe6609b6acec")
 mcp = WeatherMCP(agent=weather_agent)
-fastmcp.register_model(mcp)
 
 # ---- API route ----
 
